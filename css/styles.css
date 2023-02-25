@@ -38,6 +38,8 @@ p {
 
 .container-fluid {
     padding: 2% 15% 2%;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .header-description {
@@ -252,3 +254,4 @@ p {
 #myBtn:active {
     background-color: #c62828;
 }
+
