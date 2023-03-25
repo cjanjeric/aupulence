@@ -20,7 +20,6 @@
     <link rel="icon" type="image/png" href="img/favicon.ico">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/slider.css">
@@ -38,12 +37,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <section id="title">
         <!-- Navigation Bar-->
-        <div class="top container-fluid">
+        <div class="top top-container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="img/qrio_logo.png" height="40"
                         class="d-inline-block align-top" alt="qrio_logo"></a>
@@ -88,38 +88,74 @@
 
     <!-- CAROUSEL SECTION -->
     <section id="works">
-        <div id="demo" class="carousel slide" data-ride="carousel">
+        <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
             <!-- Indicators -->
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
             </ul>
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block" src="img/products/posresto_banner.jpg" alt="POS Resto">
+                    <img id="college" class="d-block" src="img/backgrounds/cac.png"
+                        alt="College Admissions Counselling">
+                    <div class="carousel-content">
+                        <p class="ctitle">College Admissions</br>Counselling</p>
+                        <p class="ctext xl-device">We help students prepare for the college/university</br>admissions
+                            process by providing guidance on </br>college/university selection, application strategy,
+                            </br>SOP's English exam, and interviews.</p>
+                        <p class="ctext s-device">We help students prepare for the college </br>admissions process by
+                            providing guidance on </br>college/university selection, application </br>strategy, SOP's
+                            English exam, </br>and interviews.</p>
+                        <p class="mobile-ctext">We help students prepare for the college admissions process by
+                            providing guidance on college/university selection, application strategy, SOP's
+                            English exam, and interviews.</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="img/products/inventory_banner.jpg" alt="Inverntory">
+                    <img id="test" class="d-block" src="img/backgrounds/test-bg.png" alt="Test Preparation">
+                    <div class="carousel-content test">
+                        <p class="ctitle">Test Preparation</p>
+                        <p class="ctext">We offer test preparation services such as</br>Language, Literacy & Numeracy
+                            (LLN) </br>assessment test.</p>
+                            <p class="mobile-ctext">We offer test preparation services such as Language, Literacy & Numeracy
+                                (LLN) assessment test.</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="img/products/clients_banner.jpg" alt="POS Resto">
+                    <img id="counselling" class="d-block" src="img/backgrounds/counselling.png"
+                        alt="Career Counselling">
+                    <div class="carousel-content counselling">
+                        <p class="ctitle">Career Counselling</p>
+                        <p class="ctext">We provide career counselling services to </br>help students identify their
+                            strengths and </br>interests, explore career options, and </br>develop a career plan.</p>
+                        <p class="mobile-ctext">We provide career counselling services to help students identify their
+                            strengths and interests, explore career options, and develop a career plan.</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+                <div class="carousel-item">
+                    <img id="student" class="d-block" src="img/backgrounds/student.png"
+                        alt="International Student Services">
+                    <div class="carousel-content student">
+                        <p class="ctitle">International Student </br>Services</p>
+                        <p class="ctext hide">We offer services to help international students </br>navigate the
+                            college/university admissions process, </br>including assistance with purchasing Overseas
+                            </br>insurance and English language </br>proficiency testing.</p>
+                        <p class="ctext xs-device">We offer services to help international students </br>navigate the
+                            university admissions process, </br>including assistance with purchasing </br>Overseas
+                            insurance and English </br>language proficiency testing.</p>
+                        <p class="mobile-ctext">We offer services to help international students navigate the
+                            university admissions process, including assistance with purchasing Overseas
+                            insurance and English language proficiency testing.</p>
+                    </div>
+                </div>
             </div>
     </section>
 
     <!-- SERVICES -->
-    <section class="services-section">
+    <section class="services-section remove-space">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -362,8 +398,50 @@
     <script src="js/slider.js"></script>
 
     <!-- SCROLL TO TOP -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up btn-up"></i></button>
     <script>
+
+        $(window).resize(function () {
+            const screenWidth = $(window).width() < 425;
+            const collegeEl = $("#college").attr("src");
+            const testEl = $("#test").attr("src");
+            const counsellingEl = $("#counselling").attr("src");
+            const studentEl = $("#student").attr("src");
+            const collegeImg = screenWidth ? "img/backgrounds/mobile-college.png" : "img/backgrounds/cac.png";
+            const testImg = screenWidth ? "img/backgrounds/mobile-test.png" : "img/backgrounds/test-bg.png";
+            const counsellingImg = screenWidth ? "img/backgrounds/mobile-counselling.png" : "img/backgrounds/counselling.png";
+            const studentImg = screenWidth ? "img/backgrounds/mobile-student.png" : "img/backgrounds/student.png";
+
+            if ($(window).width() < 425) {
+                if (collegeEl != collegeImg) {
+                    $("#college").attr("src", collegeImg);
+                } 
+                if (testEl != testImg) {
+                    $("#test").attr("src", testImg);
+                } 
+                if (counsellingEl != counsellingImg) {
+                    $("#counselling").attr("src", counsellingImg);
+                } 
+                if (studentEl != studentImg) {
+                    $("#student").attr("src", studentImg);
+                }
+            }
+            else {
+                if (collegeEl != collegeImg) {
+                    $("#college").attr("src", collegeImg);
+                } 
+                if (testEl != testImg) {
+                    $("#test").attr("src", testImg);
+                } 
+                if (counsellingEl != counsellingImg) {
+                    $("#counselling").attr("src", counsellingImg);
+                } 
+                if (studentEl != studentImg) {
+                    $("#student").attr("src", studentImg);
+                }
+            }
+        });
+
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
             scrollFunction()
@@ -380,6 +458,8 @@
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+            console.log("window.innerWidth", window.innerWidth)
+            console.log("screen", screen.width)
         }
     </script>
 
