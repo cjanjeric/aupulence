@@ -461,6 +461,15 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 425px) {
+    .header-text {
+        font-size: 3rem;
+        padding-top: 0rem;
+    }
+
+    .navbar {
+        padding-bottom: 2rem;
+    }
+
     .carousel-inner {
         height: 450px;
     }
@@ -542,5 +551,44 @@ p {
 
     .carousel {
         margin-bottom: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .about-us {
+        font-size: 3rem;
+
+    }
+
+    .container-fluid {
+        padding: 2% 5% 2%;
+    }
+
+    .team h3 {
+        display: none;
+    }
+
+    .founder-section p {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .testimonial .image {
+        height: 100px;
+        width: auto;
+        border-radius: 10rem;
+    }
+
+    .testimonial .slide {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0rem;
+        margin-top: 1rem;
+    }
+
+    .members-section p {
+        font-size: 1rem;
     }
 }
