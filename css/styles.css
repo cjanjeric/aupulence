@@ -112,6 +112,7 @@ p {
 
 .carousel-inner {
     height: 500px;
+    z-index: -1;
 }
 
 .carousel-item {
@@ -480,7 +481,7 @@ p {
     }
 
     .carousel-inner {
-        height: 450px;
+        height: 400px;
     }
 
     .img-fluid {
@@ -499,22 +500,22 @@ p {
 
     .carousel-content {
         position: absolute;
-        bottom: 25%; 
+        bottom: 18%; 
         left: 10px;
         z-index: 20;
         color: white;
     }
     
     .test {
-        bottom: 45.5%;
+        bottom: 38.5%;
     }
     
     .counselling {
-        bottom: 40.5%;
+        bottom: 33.5%;
     }
     
     .student {
-        bottom: 25%;
+        bottom: 18%;
     }
 
     .carousel-content .ctitle {
