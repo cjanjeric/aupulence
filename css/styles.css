@@ -9,7 +9,6 @@ body {
 
 #title {
     background-color: #ebf1f5;
-    padding: 20px;
 }
 
 .header-text {
@@ -17,7 +16,7 @@ body {
     font-weight: bolder;
     font-size: 5rem;
     line-height: 1;
-    color: #b71c1c;
+    color: #D6D0A9;
     text-align: left;
     padding-top: 2rem;
 }
@@ -33,7 +32,7 @@ p {
 }
 
 .navbar {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .container-fluid {
@@ -53,7 +52,13 @@ p {
 }
 
 .btn-danger {
-    background-color: #b71c1c;
+    background-color: #7E6000;
+    border-color: #7E6000;
+}
+
+.btn-danger:hover {
+    background-color: #AA8055;
+    border-color: #AA8055;
 }
 
 .title {
@@ -83,11 +88,21 @@ p {
 }
 
 .navbar-brand img {
-    height: 95px;
+    height: 130px;
 }
 
 .navbar-toggler {
     margin-top: 0.3rem;
+}
+
+.text-img {
+    height: 150px;
+    margin-left: -1.3rem;
+}
+
+.wtitle p {
+    color: #fff;
+    text-align: center;
 }
 
 /* SERVICES */
@@ -189,12 +204,20 @@ p {
 
 .founder-section {
     background: url("../img/bs-docs-masthead-pattern.png");
-    background-color: #b71c1c;
+    background-color: #7E6000;
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
     min-height: 100px;
-    padding-top: 2%;
+}
+
+.ownership-section {
+    background: url("../img/bs-docs-masthead-pattern.png");
+    background-color: #7E6000;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100px;
 }
 
 /* PARALLAX SECTION */
@@ -205,7 +228,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 230px;
-    padding: 2%;
 }
 
 .founder-section p {
@@ -224,7 +246,7 @@ p {
 /* COMPANY SECTION */
 .company {
     color: #2c3e50;
-    text-align: left;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     padding: 2%;
 }
@@ -234,7 +256,7 @@ p {
     font-weight: bolder;
     font-size: 2rem;
     line-height: 1;
-    color: #b71c1c;
+    color: #7E6000;
     text-align: center;
     padding: 2%;
 }
@@ -243,16 +265,26 @@ p {
     padding: 1rem;
 }
 
-.company img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 200px;
+.company .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* MEMBERS SECTION */
-.members-section p {
+.company img {
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 100px;
+}
+
+.company .title {
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+.company .highlight {
+    color: #7E6000;
 }
 
 .img-container .card-img-top {
@@ -272,7 +304,7 @@ p {
 
 .footer-section {
     text-align: left;
-    background-color: #c62828;
+    background-color: #7E6000;
     color: #ebf1f5;
 }
 
@@ -287,7 +319,7 @@ p {
 }
 
 .copyright .container-fluid {
-    background-color: #b71c1c;
+    background-color: #7E6000;
     padding-top: 1%;
     padding-bottom: 0px;
 }
@@ -298,13 +330,20 @@ p {
 }
 
 .footer-section a:hover{
-   color: #b71c1c;
+   color: #7E6000;
 }
 
 .phone-directory {
     padding-top: 5%;
     font-family: 'Montserrat', sans-serif;
+}
 
+.members .hfoc-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
 }
 
 /* SCROLL TO TOP BUTTON */
@@ -319,15 +358,15 @@ p {
     right: 30px;
     outline: none;
     border: none;
-    background-color: #c62828;
+    background-color: #7E6000;
     color: #ebf1f5;
     font-size: 2rem;
 }
 #myBtn:hover {
-    background-color: #b71c1c;
+    background-color: #AA8055;
 }
 #myBtn:active {
-    background-color: #c62828;
+    background-color: #7E6000;
 }
 
 .mobile-ctext {
@@ -342,8 +381,7 @@ p {
  @media only screen and (min-width: 1200px) {
     .carousel-content {
         position: absolute;
-        bottom: 35%; 
-        left: 75px;
+        bottom: 35%;
         z-index: 20;
         color: white;
     }
@@ -374,8 +412,7 @@ p {
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
     .carousel-content {
         position: absolute;
-        bottom: 38%; 
-        left: 75px;
+        bottom: 38%;
         z-index: 20;
         color: white;
     }
@@ -410,8 +447,7 @@ p {
 @media only screen and (max-width: 991px) and (min-width: 768px) {
     .carousel-content {
         position: absolute;
-        bottom: 50%; 
-        left: 10px;
+        bottom: 50%;
         z-index: 20;
         color: white;
     }
@@ -471,6 +507,15 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 425px) {
+
+    #title {
+        padding: 1rem;
+    }
+
+    .text-img {
+        height: 145px;
+    }
+
     .header-text {
         font-size: 3rem;
         padding-top: 0rem;
@@ -501,7 +546,6 @@ p {
     .carousel-content {
         position: absolute;
         bottom: 18%; 
-        left: 10px;
         z-index: 20;
         color: white;
     }
@@ -551,10 +595,6 @@ p {
         padding: 0% 0% 0%;
     }
 
-    .img-container {
-        padding: 0rem 0rem;
-    }
-
     .carousel-inner {
         z-index: -1;
     }
@@ -589,6 +629,7 @@ p {
         height: 100px;
         width: auto;
         border-radius: 10rem;
+        margin-bottom: 0.5rem;
     }
 
     .testimonial .slide {
@@ -598,7 +639,12 @@ p {
         margin-top: 1rem;
     }
 
-    .members-section p {
+    .members-section .testimonial-content p {
         font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .testimonial {
+        padding-bottom: 2rem;
     }
 }

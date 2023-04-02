@@ -10,7 +10,7 @@
     position: relative;
     max-width: 900px;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 3rem;
     overflow: hidden;
   }
   .testimonial .image {
@@ -19,7 +19,9 @@
     object-fit: cover;
   }
   .testimonial-content {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .testimonial .slide {
     display: flex;
@@ -28,15 +30,16 @@
     flex-direction: row;
     padding: 0 5rem;
   }
-  .slide p {
-    padding-left: 2rem;
+  .slide .testimonial-content p {
     font-size: 20px;
     font-weight: 400;
     color: #333;
+    text-align: center;
+    width: 90%;
   }
   .slide .quote-icon {
     font-size: 30px;
-    color: #b71c1c;
+    color: #7E6000;
   }
   .slide .details {
     display: flex;
@@ -59,12 +62,12 @@
     width: 40px;
     border-radius: 50%;
     transform: translateY(30px);
-    background-color: #c62828;
+    background-color: #7E6000;
     color: #ebf1f5;
     transition: 0.2s;
   }
   .nav-btn:hover {
-    background-color: #b71c1c;
+    background-color: #AA8055;
   }
   .nav-btn::after,
   .nav-btn::before {
@@ -75,11 +78,11 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
   .swiper-pagination-bullet-active {
-    background-color: #b71c1c;
+    background-color: #7E6000;
   }
   @media screen and (max-width: 768px) {
     .slide p {
-      padding: 0 20px;
+      padding: 0 0;
     }
     .nav-btn {
       display: none;
