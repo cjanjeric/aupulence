@@ -5,10 +5,16 @@ html {
 
 body {
     text-align: center;
+    overflow-x: hidden;
 }
 
 #title {
     background-color: #ebf1f5;
+}
+
+.navbar-nav .nav-item a {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header-text {
@@ -33,6 +39,7 @@ p {
 
 .navbar {
     padding-bottom: 2rem;
+    z-index: 1;
 }
 
 .container-fluid {
@@ -49,6 +56,7 @@ p {
 
 .header-description {
     text-align: left;
+    z-index: 1;
 }
 
 .btn-danger {
@@ -84,7 +92,7 @@ p {
 
 .img-container {
     display: flex;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
 }
 
 .navbar-brand img {
@@ -103,6 +111,13 @@ p {
 .wtitle p {
     color: #fff;
     text-align: center;
+}
+
+.img-fluid {
+    max-width: 300%;
+    height: auto;
+    margin-left: -23rem;
+    margin-top: -14rem;
 }
 
 /* SERVICES */
@@ -381,7 +396,7 @@ p {
  @media only screen and (min-width: 1200px) {
     .carousel-content {
         position: absolute;
-        bottom: 35%;
+        bottom: 30%;
         z-index: 20;
         color: white;
     }
@@ -451,6 +466,17 @@ p {
         z-index: 20;
         color: white;
     }
+
+    .img-fluid {
+        max-width: 200%;
+        height: auto;
+        margin-left: -5rem;
+        margin-top: -28rem;
+    }
+
+    .container-fluid {
+        padding: 2% 5% 2%;
+    }
     
     .test {
         bottom: 64.5%;
@@ -477,8 +503,18 @@ p {
         display: none;
     }
 
+    .services-section .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
     .carousel-indicators {
+        width: initial;
+        top: 75px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         margin-left: 0rem !important;
+        padding-bottom: 2rem;
     }
 
     .carousel-indicators li {
@@ -495,6 +531,10 @@ p {
 
     .remove-space {
         margin-top: -9rem;
+    }
+
+    .company {
+        align-items: center;
     }
 }
 
@@ -646,5 +686,10 @@ p {
 
     .testimonial {
         padding-bottom: 2rem;
+    }
+
+    .col-lg-6 {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }

@@ -80,6 +80,10 @@
   .swiper-pagination-bullet-active {
     background-color: #7E6000;
   }
+  .testi-content {
+    display: flex;
+    align-items: center;
+  }
   @media screen and (max-width: 768px) {
     .slide p {
       padding: 0 0;
