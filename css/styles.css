@@ -538,6 +538,14 @@ p {
     .company {
         align-items: center;
     }
+
+    .testimonial .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 0rem 2rem 0rem 3.5rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -693,5 +701,9 @@ p {
     .col-lg-6 {
         padding-right: 0px;
         padding-left: 0px;
+    }
+
+    .container {
+        height: 66vh;
     }
 }
