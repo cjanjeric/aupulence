@@ -391,7 +391,7 @@ p {
 }
 
 .space {
-    padding: 1.5rem;
+    margin: 1.5rem;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -705,5 +705,15 @@ p {
 
     .container {
         height: 66vh;
+    }
+
+    .members .lead {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .space {
+        margin: 0.7rem;
     }
 }
