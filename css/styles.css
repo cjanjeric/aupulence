@@ -354,12 +354,9 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-.members .hfoc-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    font-size: 3rem;
-    color: black;
+.members .lead {
     text-align: center;
+    font-size: 2.5rem;
 }
 
 /* SCROLL TO TOP BUTTON */
@@ -391,6 +388,10 @@ p {
 
 .xs-device {
     display: none;
+}
+
+.space {
+    padding: 1.5rem;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
