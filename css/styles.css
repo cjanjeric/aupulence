@@ -557,6 +557,10 @@ p {
         flex-direction: row;
         padding: 0rem 2rem 0rem 3.5rem;
     }
+
+    .founder .card-img-top {
+        margin-bottom: 1rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -726,5 +730,9 @@ p {
 
     .space {
         margin: 0.7rem;
+    }
+
+    .founder .card-img-top {
+        margin-bottom: 1rem;
     }
 }
