@@ -73,11 +73,14 @@
                 <div class="header-description col-lg-6">
                     <!-- <h1 class="header-text">AUPULENCE</h1> -->
                     <img src="img/text.png" height="40" class="text-img d-inline-block align-top" alt="aupulence_logo">
-                    <p class="lead">Leading you to your full potential and achieve your goals.
-                    </p>
-                    <a href="#w-us" class="apply-container"> <button type="button" class="btn btn-danger btn-lg">Apply
-                            now</button>
-                    </a>
+                    <div class="header-description-text">
+                        <p class="lead">Leading you to your full potential and achieve your goals.
+                        </p>
+                        <a href="#w-us" class="apply-container"> <button type="button"
+                                class="btn btn-danger btn-lg">Apply
+                                now</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 img-container">
                     <img class="img-fluid" src="img/aus2 3.png">
@@ -90,7 +93,7 @@
     <section id="works">
         <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
             <!-- Indicators -->
-            <ul class="carousel-indicators container-fluid">
+            <ul id="indicators" class="carousel-indicators container-fluid">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
@@ -159,28 +162,34 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img class="card-img-top" src="img/backgrounds/story-telling.png" alt="Stories">
-                        <div class="card-body">
-                            <h5 class="card-title">MIGRANT STORIES</h5>
+                    <a class="migrant-card" href="#migrant-section">
+                        <div class="card">
+                            <img class="card-img-top" src="img/backgrounds/story-telling.png" alt="Stories">
+                            <div class="card-body">
+                                <h5 class="card-title">MIGRANT STORIES</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img class="card-img-top" src="img/backgrounds/banner-multicultural.png" alt="Mulricultural">
-                        <div class="card-body">
-                            <h5 class="card-title">MULTICULTURAL COMMUNITIES</h5>
+                    <a id="immi-news" class="migrant-card" href="#myModal">
+                        <div class="card">
+                            <img class="card-img-top" src="img/backgrounds/newspaper.png" alt="Mulricultural">
+                            <div class="card-body">
+                                <h5 class="card-title">IMMIGRATION NEWS</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img class="card-img-top" src="img/backgrounds/aus.jpg" alt="About Australia">
-                        <div class="card-body">
-                            <h5 class="card-title">ABOUT AUSTRALIA</h5>
+                    <a id="about-au" class="migrant-card" href="#about-us">
+                        <div class="card">
+                            <img class="card-img-top" src="img/backgrounds/aus.jpg" alt="About Australia">
+                            <div class="card-body">
+                                <h5 class="card-title">ABOUT AUPULENCE</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
     </section>
@@ -241,7 +250,7 @@
         </section>
 
         <!-- FOUNDER SECTION -->
-        <section class="founder-section">
+        <section class="founder-section" id="founders-section">
             <div class="container-fluid">
                 <div class="team">
                     <h3>MEET THE TEAM</h3>
@@ -252,8 +261,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="founder">
-                            <img class="card-img-top" src="img/founders/founder-avatar.png"
-                                alt="Founder">
+                            <img class="card-img-top" src="img/founders/founder-avatar.png" alt="Founder">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -274,8 +282,8 @@
                 </div>
         </section>
 
-        <!-- MEMBERS-SECTION -->
-        <section class="members-section">
+        <!-- MIGRANT-SECTION -->
+        <section class="members-section" id="migrant-section">
             <div class="container-fluid">
                 <div class="members">
                     <!-- <h3 class="hfoc-text">HEAR FROM OUR CLIENTS</h3> -->
@@ -407,6 +415,26 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="slide swiper-slide">
+                                <img src="img/members/abigail_villanueva.png" alt="Abigail Villanueva's Picture"
+                                    class="image" />
+                                <div class="testimonial-content">
+                                    <p>
+                                        I talked to sir Mark about going to Australia, he told me what are the
+                                        requirements, and also he help me to find a best school for me. I'm always praying to God to help me about my visa and
+                                        after how many months of stress about my visa. Finally last month 2022 got a
+                                        result from IMMI and it was GRANTED all the hard work and stress pay off. Big
+                                        Thanks to Aupulence Education.
+                                    </p>
+
+                                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                                    <div class="details">
+                                        <span class="name">Abigail</span>
+                                        <span class="job">Filipino Nat'l/Student</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-button-next nav-btn"></div>
                         <div class="swiper-button-prev nav-btn"></div>
@@ -475,6 +503,100 @@
     </section>
     <!-- Footer -->
 
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h5>Immigration News</h5>
+                    <p>Latest news, guides, tips and advice</p>
+                </div>
+                <div class="modal-body-contents">
+                    <section>
+                        <hr>
+                        <div class="news">
+                            <a class="news-title" target="_blank" rel="noopener noreferrer"
+                                href="https://www.studyaustralia.gov.au/news/work-restrictions-for-student-visa-holders-re-introduced">
+                                <h5>Work hours limit for student visa holders to be re-introduced</h5>
+                            </a>
+                            <div class="news-content">
+                                <p>From 1 July 2023, the Australian Government will re-introduce limits on the number of
+                                    work hours allowed for student visa holders (subclass 500) studying and working in
+                                    Australia. </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </section>
+                    <section>
+                        <div class="news">
+                            <a class="news-title" target="_blank" rel="noopener noreferrer"
+                                href="https://www.studyaustralia.gov.au/news/post-study-work-rights-extension-qualifications-announced">
+                                <h5>Post-study work rights extension: qualifications announced</h5>
+                            </a>
+                            <div class="news-content">
+                                <p>On 22 February 2023, the Australian Government announced the list of qualifications
+                                    that will be considered for an extended post-study ‘stay and work’ period. </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <hr>
+                        <div class="news">
+                            <a class="news-title" target="_blank" rel="noopener noreferrer"
+                                href="https://www.studyaustralia.gov.au/news/change-to-student-visa-application-gte-statement-length">
+                                <h5>Change to student visa application: GTE statement length</h5>
+                            </a>
+                            <div class="news-content">
+                                <p>As part of your application for a student visa (subclass 500), you will need to
+                                    provide a personal statement, in English, that addresses the Genuine Temporary
+                                    Entrant (GTE) requirement. </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </section>
+                    <section>
+                        <div class="news">
+                            <a class="news-title" target="_blank" rel="noopener noreferrer"
+                                href="https://www.studyaustralia.gov.au/news/work-restrictions-for-student-visa-holders-re-introduced">
+                                <h5>Work hours limit for student visa holders to be re-introduced</h5>
+                            </a>
+                            <div class="news-content">
+                                <p>From 1 July 2023, the Australian Government will re-introduce limits on the number of
+                                    work hours allowed for student visa holders (subclass 500) studying and working in
+                                    Australia. </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <hr>
+                        <div class="news">
+                            <a class="news-title" target="_blank" rel="noopener noreferrer"
+                                href="https://www.studyaustralia.gov.au/news/the-world-university-rankings-2023">
+                                <h5>Australia shines again in the THE World University Rankings 2023</h5>
+                            </a>
+                            <div class="news-content">
+                                <p>The Times Higher Education (THE) World University Rankings 2023 show that Australia
+                                    has maintained a strong overall position, including two universities in the top 50
+                                    worldwide and seven Australian institutions in the world top 100. </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </section>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+
+    </div>
+
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
     <!-- JavaScript -->
@@ -503,9 +625,39 @@
             console.log("window.innerWidth", window.innerWidth)
             console.log("screen", screen.width)
         }
+
+        const modal = document.getElementById("myModal");
+        const ul = document.getElementById("indicators");
+
+        // Get the button that opens the modal
+        const btn = document.getElementById("immi-news");
+
+        // Get the <span> element that closes the modal
+        const span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+            ul.style.display = "none";
+            $('body').css("overflow", "hidden");
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+            ul.style.display = "flex";
+            $('body').css("overflow", "auto");
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                ul.style.display = "flex";
+                $('body').css("overflow", "auto");
+            }
+        }
     </script>
-
-
 </body>
 
 </html>
