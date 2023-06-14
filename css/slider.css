@@ -1,5 +1,4 @@
 .container {
-    height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -10,7 +9,7 @@
   }
   .testimonial {
     position: relative;
-    max-width: 900px;
+    max-width: 1050px;
     width: 100%;
     padding-bottom: 3rem;
     overflow: hidden;
@@ -27,6 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
   }
   .testimonial .slide {
     display: flex;
@@ -37,6 +37,13 @@
   }
   .slide .testimonial-content p {
     font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    width: 90%;
+  }
+  .slide .testimonial-content .long-testimonial {
+    font-size: 16px;
     font-weight: 400;
     color: #333;
     text-align: center;
@@ -96,4 +103,8 @@
     .nav-btn {
       display: none;
     }
+
+    .slide .testimonial-content .long-testimonial {
+      width: 100%;
+  }
   }

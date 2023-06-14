@@ -9,7 +9,11 @@ body {
 }
 
 #title {
-    background-color: #ebf1f5;
+    background-image: url("../img/aus2 3.png");
+    background-size: contain;
+    background-position: center left 600px;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
 }
 
 .navbar-nav .nav-item a {
@@ -260,6 +264,7 @@ a .card:hover {
 .founder-section p {
     color: #ebf1f5;
     text-align: center;
+    font-family: 'Montserrat-Large', sans-serif;
 }
 
 .team h3 {
@@ -364,10 +369,21 @@ a .card:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
-.members .lead {
+.members {
+    display: flex;
+    justify-content: center;
+}
+
+.members .title2,
+.members .title1 {
     text-align: center;
     font-size: 2.5rem;
+    font-family: 'Montserrat-Large', sans-serif;
+    font-weight: bolder;
+    line-height: 2rem;
+    padding: 0 1rem;
 }
+
 
 /* SCROLL TO TOP BUTTON */
 #myBtn {
@@ -426,7 +442,7 @@ a .card:hover {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -538,6 +554,7 @@ a .card:hover {
 
   .modal-footer {
     padding: 2px 16px;
+    border-top: 0px none;
   }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -696,12 +713,134 @@ a .card:hover {
     .founder .card-img-top {
         margin-bottom: 1rem;
     }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-body-contents {
+        padding: 4rem;
+    }
+    
+    .modal-body-contents section {
+        width: 100%;
+    }
+
+    .slide .testimonial-content .long-testimonial {
+        font-size: 15px;
+        line-height: 125%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 850px) and (min-width: 768px) {
+@media only screen and (max-width: 767px) and (min-width: 426px) {
     .remove-space {
         margin-top: -11rem;
+    }
+
+    .img-fluid {
+        max-width: 200%;
+        height: auto;
+        margin-left: -5rem;
+        margin-top: -28rem;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+    }
+
+    .carousel-content {
+        position: absolute;
+        bottom: 50%;
+        z-index: 20;
+        color: white;
+    }
+
+    .container-fluid {
+        padding: 2% 5% 2%;
+    }
+    
+    .test {
+        bottom: 64.5%;
+    }
+    
+    .counselling {
+        bottom: 60.5%;
+    }
+    
+    .student {
+        bottom: 50.5%;
+    }
+
+    .carousel-content .ctitle {
+        font-size: 2.2rem;
+    }
+
+    .carousel-content .ctext {
+        font-size: 1rem;
+        line-height: 1.3em;
+    }
+
+    .services-section .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
+    .carousel-indicators {
+        width: initial;
+        top: 75px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0rem !important;
+        padding-bottom: 2rem;
+    }
+
+    .xl-device {
+        display: none;
+    }
+
+    .stories-section {
+        margin-top: 1rem;
+    }
+
+    .members {
+        display: block;
+    }
+
+    .testimonial .slide {
+        padding: 0 0rem;
+        flex-wrap: wrap;
+    }
+
+    .about-us {
+        font-size: 3rem;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-body-contents {
+        padding: 0;
+    }
+    
+    .modal-body-contents section {
+        width: 100%;
+    }
+
+    .slide .testimonial-content .long-testimonial {
+        font-size: 15px;
+        line-height: 125%;
     }
 }
 
@@ -817,9 +956,9 @@ a .card:hover {
         margin-bottom: 1rem;
     }
 
+    .title,
     .about-us {
-        font-size: 3rem;
-
+        font-size: 2rem;
     }
 
     .container-fluid {
@@ -863,11 +1002,12 @@ a .card:hover {
         padding-left: 0px;
     }
 
-    .container {
-        height: 66vh;
+    .members {
+        display: block;
     }
 
-    .members .lead {
+    .members .title2,
+    .members .title1 {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;
@@ -881,6 +1021,10 @@ a .card:hover {
         margin-bottom: 1rem;
     }
 
+    .modal-content {
+        width: 90%;
+    }
+
     .modal-body {
         padding: 0;
     }
@@ -891,5 +1035,10 @@ a .card:hover {
     
     .modal-body-contents section {
         width: 100%;
+    }
+
+    .slide .testimonial-content .long-testimonial {
+        font-size: 15px;
+        line-height: 125%;
     }
 }
