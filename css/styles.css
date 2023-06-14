@@ -839,8 +839,7 @@ a .card:hover {
     }
 
     .slide .testimonial-content .long-testimonial {
-        font-size: 15px;
-        line-height: 125%;
+        line-height: 130%;
     }
 }
 
@@ -1038,7 +1037,7 @@ a .card:hover {
     }
 
     .slide .testimonial-content .long-testimonial {
-        font-size: 15px;
-        line-height: 125%;
+        font-size: 18px;
+        line-height: 130%;
     }
 }
